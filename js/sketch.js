@@ -128,10 +128,10 @@ var __slice = Array.prototype.slice;
       switch (e.type) {
         case 'mousedown':
         case 'touchstart':
+	  if (this.painting) {
+            this.stopPainting();
+          }
           this.startPainting();
-	  if (this.painting) {    //add
-	    this.stopPainting();  //add
-          }                       //add
           break;
         case 'mouseup':
         case 'mouseout':
