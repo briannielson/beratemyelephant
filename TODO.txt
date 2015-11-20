@@ -1,0 +1,4 @@
+- Need to save image to paths instead of images
+- Save paths to database with user id
+- set up users as well as temp id system (craigslist with ids)
+
