@@ -13,17 +13,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/jquery-ui.min.css"/>
+    <link rel="stylesheet" href="css/jquery-ui.structure.min.css"/>
+    <link rel="stylesheet" href="css/jquery-ui.theme.min.css"/>
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css"/>
 
 </head>
 <body>
 
-<canvas id="canvas" width="800px" height="600px"></canvas>
+<canvas id="canvas" width="600px" height="600px"></canvas>
 
-<button id="undo"   type="button">Undo</button>
-<button id="redo"   type="button">Redo</button>
-<button id="reDraw" type="button">Redraw</button>
+<div id="controls">
+    <button id="undo" type="button">Undo</button>
+    <button id="redo" type="button">Redo</button>
+    <button id="reDraw" type="button">Redraw</button>
+    <button id="clear" type="button">Clear canvas</button>
+    <button id="marker" type="button">marker</button>
+    <button id="chisel" type="button">chisel</button>
+    <button id="spray" type="button">spray</button>
+    <button id="eraser" type="button">eraser</button>
+    <br/>
+
+    <p>
+        <label for="size">Brush Size:</label>
+        <input type="text" id="size" readonly style="border:0; color:#f6931f; font-weight:bold;">
+    </p>
+
+    <div id="slider"></div>
+</div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
 <script src="js/canvasVector.js"></script>
 
 </body>
