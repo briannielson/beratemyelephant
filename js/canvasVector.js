@@ -6,7 +6,8 @@ var paths = [];
 var pathsTrash = [];
 var pathsClear = [];
 var paint;
-var strokeColor = "red";
+var strokeColorSelection = "red"
+var strokeColor = strokeColorSelection;
 var strokeSize = 5;
 var lastPath = -1;
 var canvas;
@@ -253,17 +254,17 @@ jQuery(document).ready(function ($) {
 
     $('#marker').click(function () {
         tool = "marker";
-        strokeColor = "red";
+        strokeColor = strokeColorSelection;
     });
 
     $('#chisel').click(function () {
         tool = "chisel";
-        strokeColor = "red";
+        strokeColor = strokeColorSelection;
     });
 
     $('#spray').click(function () {
         tool = "spray";
-        strokeColor = "red";
+        strokeColor = strokeColorSelection;
     });
 
     $('#eraser').click(function () {
