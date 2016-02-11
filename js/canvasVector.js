@@ -6,8 +6,12 @@ var paths = [];
 var pathsTrash = [];
 var pathsClear = [];
 var paint;
+<<<<<<< HEAD
 var strokeColorSelection = "red"
 var strokeColor = strokeColorSelection;
+=======
+var strokeColor = "grey";
+>>>>>>> d88962c016b9d58ec03d40377aa8a7f7323399f9
 var strokeSize = 5;
 var lastPath = -1;
 var canvas;
@@ -254,17 +258,29 @@ jQuery(document).ready(function ($) {
 
     $('#marker').click(function () {
         tool = "marker";
+<<<<<<< HEAD
         strokeColor = strokeColorSelection;
+=======
+        strokeColor = "grey";
+>>>>>>> d88962c016b9d58ec03d40377aa8a7f7323399f9
     });
 
     $('#chisel').click(function () {
         tool = "chisel";
+<<<<<<< HEAD
         strokeColor = strokeColorSelection;
+=======
+        strokeColor = "grey";
+>>>>>>> d88962c016b9d58ec03d40377aa8a7f7323399f9
     });
 
     $('#spray').click(function () {
         tool = "spray";
+<<<<<<< HEAD
         strokeColor = strokeColorSelection;
+=======
+        strokeColor = "grey";
+>>>>>>> d88962c016b9d58ec03d40377aa8a7f7323399f9
     });
 
     $('#eraser').click(function () {
